@@ -59,6 +59,7 @@ body{
     height: 100vh;
     padding: 3rem 0;
     font-family: "Spartan";
+    /* background-image: url(images/bg-pattern-bottom-mobile.svg); */
 }
 
 /* Heading and info */
@@ -155,4 +156,85 @@ h4{
     flex-direction: column;
     justify-content: space-evenly;
     margin-left: 2rem;
+}
+
+/* Desktop design */
+
+@media (min-width: 900px) {
+    body{
+        padding: 5rem;
+        max-width: 1440px;
+        margin: 0 auto 0;
+    }
+
+    /* Heading and info */
+    .info{
+        display: inline-flex;
+        flex-direction: column;
+        width: 50%;
+        text-align: left;
+        padding: 0 0 2rem 0;
+    }
+
+    .info h1{
+        width: 400px;
+        padding-left: 2rem;
+    }
+
+    .info p{
+        margin: 0 auto 0 0;
+        width: 400px;
+        padding-left: 2rem;
+    }
+    /* Ratings */
+    .wrapper{
+        display: inline-flex;
+        flex-direction: column;
+        width: 49%;
+       
+    }
+    .rating:nth-child(1){
+        margin-right: 300px;
+    }
+    .rating:nth-child(3){
+       margin-right:  10px;
+    }
+
+    .rating{
+        width: 500px;
+    }
+
+    .rating h5{
+        display: inline-block;
+        padding: 0;
+        margin-left: 2.5rem;
+    }
+
+    .rating img{
+        vertical-align: bottom;
+
+    }
+
+    .container{
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+        height: 450px;
+    }
+    .testimonial{
+        max-width: 340px;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 1180px){
+    .testimonial{
+        margin: 0 auto;
+    }
+    .testimonial:nth-child(2){
+        margin-top: 30px;
+    }
+    .testimonial:nth-child(3){
+        margin-top: 60px;
+    }
 }
